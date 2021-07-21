@@ -10,6 +10,8 @@
 
 		gtag('config', 'G-Z209PYM8T6');
 	</script>
+    <script src= "https://smtpjs.com/v3/smtp.js">
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -755,7 +757,7 @@
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">CALL ME</button>
+                            <button type="submit" class="form-control-submit-button" onclick="sendCallMe()">CALL ME</button>
                         </div>
                         <div class="form-message">
                             <div id="lmsgSubmit" class="h3 text-center hidden"></div>
@@ -780,7 +782,7 @@
                         <h2>Get In Touch Using The Form</h2>
                         <p>You can stop by our office for a cup of coffee and just use the contact form below for any questions and inquiries</p>
                         <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"></i>Corporate Office : Anupam Plaza, Mayur Vihar Phase 1, New Delhi 110096, India</li>
+                            <!-- <li class="address"><i class="fas fa-map-marker-alt"></i>Corporate Office : Anupam Plaza, Mayur Vihar Phase 1, New Delhi 110096, India</li> -->
                             <li class="address"><i class="fas fa-map-marker-alt"></i>Head Office : Stadium Rd, Model Town, Bareilly, Uttar Pradesh 243122, India</li>
                             <li><i class="fas fa-phone"></i><a href="tel:003024630820">+91 999 757 6627</a></li>
                             <li><i class="fas fa-phone"></i><a href="tel:003024630820">+91 885 955 5859</a></li>
@@ -812,7 +814,7 @@
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                            <button type="submit" class="form-control-submit-button" onclick="sendContact()">SUBMIT MESSAGE</button>
                         </div>
                         <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
@@ -867,5 +869,6 @@
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/sendEmail.js"></script>
 </body>
 </html>
