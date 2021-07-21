@@ -21,7 +21,7 @@ function sendContact() {
         To: 'rajan.chauhan.bly@gmail.com',
         From: "softmannotification@gmail.com",
         Subject: "Website Call Me",
-        Body: "Name :- " + document.getElementById("cname").value + " Email :- " + document.getElementById("cemail").value + " Message :- " + document.getElementById("cmessage").value ,
+        Body: "Name :- " + document.getElementById("cname").value + " Phone :- " + document.getElementById("cphone").value + " Email :- " + document.getElementById("cemail").value + " Message :- " + document.getElementById("cmessage").value ,
       })
         .then(function (message) {
             alert("You message has been sent")
